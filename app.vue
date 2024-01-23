@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="selection:bg-[#e6b8b3] selection:text-zinc-900 decoration-inherit">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

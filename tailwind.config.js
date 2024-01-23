@@ -1,4 +1,4 @@
 module.exports = {
-  dakrMode: "class",
+  darkMode: "class",
   plugins: [require("@tailwindcss/typography")],
 };
