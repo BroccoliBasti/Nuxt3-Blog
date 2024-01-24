@@ -5,6 +5,7 @@ head:
   meta:
     - name: "og:image"
       content: /images/VintagePixelBasti.jpg
+publishedAt: 2024-19-1 11:14:00
 ---
 
 # Introduction to Basti

@@ -4,7 +4,7 @@
             <div class="flex items-center space-x-12">
 
                 <div>
-                    <NuxtLink to="/" class="text-xl font-semibold p-2 text-amber-400">ⵘ Basti</NuxtLink>
+                    <NuxtLink to="/" class="text-xl font-semibold p-2 text-amber-600 dark:text-amber-400">ⵘ Basti</NuxtLink>
                 </div>
 
                 <Menu />
@@ -32,6 +32,6 @@ body {
 }
 
 .repo {
-    @apply hover:bg-pink-200 dark:hover:text-zinc-900 dark:hover:border-pink-200;
+    @apply border-pink-200 hover:bg-pink-200 dark:hover:text-zinc-900 dark:hover:border-pink-200;
 }
 </style>

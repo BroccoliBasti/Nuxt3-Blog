@@ -1,8 +1,8 @@
 <template>
     <div class="flex space-x-2 items-center">
-        <div class="text-gray-500 text-xs" v-if="showNextModeLabel">Change theme to {{ nextMode }}</div>
+        <div class="text-zinc text-xs" v-if="showNextModeLabel">Change theme to '{{ nextMode }}'</div>
         <button @click="toggleMode" @mouseenter="showNextModeLabel = true" @mouseleave="showNextModeLabel = false"
-            class="hover:bg-gray-200 dark:hover:bg-gray-600 px-2 py-1 text-gray-500">{{ nextModeIcon
+            class="hover:bg-indigo-200 px-2 py-1 pb-1.5 text-zinc-500 rounded-md">{{ nextModeIcon
             }}</button>
     </div>
 </template>

@@ -1,5 +1,5 @@
 ---
-title: "Title of the page"
+title: "Initial commit"
 description: "meta description of the page"
 head:
   meta:
@@ -8,11 +8,12 @@ head:
     - name: "robots"
       content: "index, follow"
     - name: "author"
-      content: "NuxtLabs"
+      content: "Basti"
     - name: "copyright"
-      content: "© 2022 NuxtLabs"
+      content: "© 2024 Basti"
     - name: "og:title"
       content: "This is an OpenGraph title"
+publishedAt: 2023-12-29 17:01:00
 ---
 
 # First post on our website
@@ -34,7 +35,7 @@ Unordered lists:
 
 Numbered lists:
 
-1.  Pay taxes
+1.  Pay bills
 2.  Die
 
 Todo list:
@@ -43,9 +44,9 @@ Todo list:
 - [ ] Pay bills
 
 Tables:
-| Name | Surname |
+| Name | Status |
 |--|--|
-| Piotr | Jura |
+| Basti | Friendly |
 
 ```html
 <html>
