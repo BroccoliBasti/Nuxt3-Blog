@@ -32,6 +32,6 @@ body {
 }
 
 .repo {
-    @apply border-pink-200 hover:bg-pink-200 dark:hover:text-zinc-900 dark:hover:border-pink-200;
+    @apply border-rose-200 hover:bg-rose-200 dark:hover:text-zinc-900 dark:hover:border-rose-200;
 }
 </style>

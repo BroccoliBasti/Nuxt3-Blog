@@ -7,7 +7,7 @@
 
         <ul>
             <li v-for="post in posts" :key="post._path">
-                <NuxtLink :to="post._path" class="column hover:bg-pink-200 dark:hover:text-zinc-800">
+                <NuxtLink :to="post._path" class="column hover:bg-rose-100 dark:hover:text-zinc-800">
                     <div :class="{
                         'text-transparent': !post.displayYear,
                         'text-zinc-400 dark:text-zinc-500': post.displayYear

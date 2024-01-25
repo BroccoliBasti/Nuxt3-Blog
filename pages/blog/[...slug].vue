@@ -1,14 +1,54 @@
 <template>
     <article
-        class="prose dark:prose-invert prose-pre:bg-white dark:prose-pre:bg-zinc-800 prose-pre:text-zinc-700 dark:prose-pre:text-zinc-300 max-w-none">
+        class="prose dark:prose-invert prose-pre:bg-emerald-200 dark:prose-pre:bg-cyan-900/25 prose-pre:text-zinc-700 dark:prose-pre:text-amber-50 max-w-none">
         <ContentDoc v-slot="{ doc }">
-            {{ doc.body.toc.links }}
-            <ContentRenderer :value="doc" />
+            <div class="grid grid-cols-6 gap-16">
+                <div :class="{ 'col-span-4': doc.toc, 'col-span-6': !doc.toc }">
+                    <ContentRenderer :value="doc" />
+                </div>
+                <div class="col-span-2 not-prose" v-if="doc.toc">
+                    <aside class="sticky top-8">
+                        <div class="font-semibold mb-2 text-amber-50">
+                            Table of Contents
+                        </div>
+                        <nav>
+                            <TocLinks :links="doc.body.toc.links" :active-id="activeId" />
+                        </nav>
+                    </aside>
+                </div>
+            </div>
         </ContentDoc>
     </article>
 </template>
 
 <script setup>
-const route = useRoute();
-console.log(route.path);
+const activeId = ref(null);
+
+onMounted(() => {
+    const callback = (entries) => {
+        for (const entry of entries) {
+            if (entry.isIntersecting) {
+                activeId.value = entry.target.id;
+                break;
+            }
+        }
+    };
+
+    const observer = new IntersectionObserver(callback, {
+        root: null,
+        threshold: 0.5
+    });
+
+    const elements = document.querySelectorAll('h2, h3');
+
+    for (const element of elements) {
+        observer.observe(element);
+    }
+
+    onBeforeUnmount(() => {
+        for (const element of elements) {
+            observer.unobserve(element);
+        }
+    });
+});
 </script>
