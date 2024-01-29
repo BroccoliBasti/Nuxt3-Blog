@@ -19,7 +19,8 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@nuxt/content": "^2.10.0"
+    "@nuxt/content": "^2.10.0",
+    "sitemap": "^7.1.1"
   },
   "pnpm": {
     "overrides": {

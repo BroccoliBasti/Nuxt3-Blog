@@ -2,7 +2,7 @@
     <div class="flex space-x-2 items-center">
         <div class="text-zinc text-xs" v-if="showNextModeLabel">Change theme to '{{ nextMode }}'</div>
         <button @click="toggleMode" @mouseenter="showNextModeLabel = true" @mouseleave="showNextModeLabel = false"
-            class="hover:bg-indigo-200 px-2 py-1 pb-1.5 text-zinc-500 rounded-md">{{ nextModeIcon
+            class="hover:bg-indigo-200 px-2 py-1 pb-1.5 text-zinc-500 rounded-md text-4xl md:text-base">{{ nextModeIcon
             }}</button>
     </div>
 </template>

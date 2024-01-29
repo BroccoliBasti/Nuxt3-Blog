@@ -1,7 +1,5 @@
 <template>
-    <div>
-        <article class="prose dark:prose-invert">
-            <ContentDoc path="/about" />
-        </article>
-    </div>
+    <article class="prose dark:prose-invert max-w-none">
+        <ContentDoc path="/about" />
+    </article>
 </template>

@@ -1,19 +1,30 @@
 <template>
-  <div class="selection:bg-[#e6b8b3] selection:text-zinc-900 decoration-inherit">
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
-<!-- <script setup>
-const layout = 'another';
-</script> -->
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 100ms;
+}
 
-<!-- <style>
-@layer base {
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(10rem), grayscale(1);
+  /* scale: 1%; */
+}
+
+h2>a,
+h3>a {
+  text-decoration: none !important;
+}
+
+/* @layer base {
   html {
     font-family: "Proxima Nova", system-ui, sans-serif;
   }
-}
-</style> -->
+} */
+</style>

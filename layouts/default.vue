@@ -1,10 +1,12 @@
 <template>
-    <div class="container mx-auto max-w-2xl">
+    <div class="container mx-auto max-w-2xl selection:bg-sky-200 selection:text-zinc-900">
         <header class="flex justify-between items-center mt-5">
             <div class="flex items-center space-x-12">
 
-                <div>
-                    <NuxtLink to="/" class="text-xl font-semibold p-2 text-amber-600 dark:text-amber-400">ⵘ Basti</NuxtLink>
+                <div class="hidden md:block">
+                    <NuxtLink to="/"
+                        class="text-xl font-semibold p-2 text-amber-600 dark:text-amber-400 dark:hover:bg-zinc-800">ⵘ Basti
+                    </NuxtLink>
                 </div>
 
                 <Menu />
@@ -32,6 +34,6 @@ body {
 }
 
 .repo {
-    @apply border-rose-200 hover:bg-rose-200 dark:hover:text-zinc-900 dark:hover:border-rose-200;
+    @apply border-rose-200 text-zinc-100 hover:bg-rose-200 dark:hover:text-zinc-900 dark:hover:border-rose-200;
 }
 </style>
